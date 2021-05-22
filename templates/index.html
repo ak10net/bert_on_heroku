@@ -12,7 +12,7 @@
 				<h4>Enter a paragraph and a question to test BERT</h4>
 				<form role="form" method='POST' action='/'>
 					<div class="form-group">
-						<textarea name="paragraph" class="form-control" id="url-box" placeholder="Enter a paragraph" style="max_width: 300px;" autofocus required>
+						<textarea name="paragraph" class="form-control" id="url-box" placeholder="Enter a paragraph" style="max_width: 300px; max_length: 300px;" autofocus required>
 							{% if result %}
 								{{ result[2]}}
 							{% endif %}
